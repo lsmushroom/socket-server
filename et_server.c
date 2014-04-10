@@ -78,7 +78,9 @@ int main()
 
             close(connfd);
             return 0;
-        }
+        }else if(pid > 0){
+            close(connfd);
+		}
     }
 
     return 0;
