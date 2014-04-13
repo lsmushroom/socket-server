@@ -56,7 +56,6 @@ int main(int argc, char *argv[])
 
 	epoll_ctl(epfd, EPOLL_CTL_ADD, sockfd, &ev);
 
-    int i;
     while(1)
     {
         nfds = epoll_wait(epfd , &events , MAX_EVENT , -1);
